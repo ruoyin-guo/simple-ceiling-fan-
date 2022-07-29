@@ -5,7 +5,7 @@ public class directionControl implements pullCord {
 
     @Override
     public void pull(Fan fan) throws Exception {
-//        direction = (direction == FORWARD) ? BACKWARD : FORWARD;
+
         if(!fan.isOn()){
             throw new Exception("the fan is OFF, please turn it on first");
         }
